@@ -2,6 +2,7 @@ body{
     box-sizing: border-box;
     overflow: hidden;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: black;
 }
 .navbar-brand{
     font-weight: bolder;
@@ -53,6 +54,12 @@ body{
     position: relative;
 }
 .sec3{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background: linear-gradient(to right top, #629BE1FF, #ffffff);
+}
+.sec4{
     width: 100vw;
     height: 100vh;
     position: relative;
