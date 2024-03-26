@@ -15,55 +15,42 @@
     </style>
 </head>
 <body>
-    <header>
-        <nav class="navBar">
-            <!--left side-->
-            <div>
-                <img src="assests/logo-white.png" alt="logo" style="width: 70px; height: 70px;">
-                <h3 class="pos">POS</h3>
-            </div>
-            <!--right side-->
-            <div class="navRight">
-                    <a href="#home">Home</a>
-                    <a href="#Customer">Customer</a>
-                    <a href="#Items">Items</a>
-                    <a href="#Orders">Orders</a>
-            </div>
-        </nav>
-    </header>
-<section class="sec1">
-    <div>
-        <p class="dashboard">DashBoard</p>
-    </div>
-    <div>
-        <button type="button" class="btn btn-outline-info btnCustomer" style="font-weight: bolder">Customer
-            <img src="assests/icons8-customer-64.png" alt="Customer">
+<nav class="navbar navbar-expand-lg bg-body-tertiary shadow mb-5 bg-white fixed-top" >
+    <div class="container-fluid" >
+        <a class="navbar-brand" href="index.html">POS System</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars fa-lg"></i>
         </button>
-        <button type="button" class="btn btn-outline-light btnItems" style="font-weight: bolder">Items
-            <img src="assests/icons8-item-48.png" alt="">
-        </button>
-        <button type="button" class="btn btn-outline-primary btnOrders" style="font-weight: bolder">Orders
-            <img src="assests/icons8-order-48.png" alt="">
-        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link" style="color:mediumpurple">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#customer" class="nav-link" style="color: mediumpurple">Customer</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#items" class="nav-link" style="color:mediumpurple">Item</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#orders" class="nav-link" style="color:mediumpurple">Place-Order</a>
+                </li>
+            </ul>
+        </div>
     </div>
-    <div class="customerCount">
-        <h1>
-            Current Customers
-            <img src="assests/icons8-customer-64.png" alt="">
-        </h1>
-        <h2>978</h2>
+</nav>
+<section class="sec1" id="home">
+    <div class="welcome">
+        <h1 style="font-size: 100px; text-align: center; padding-top: 170px">Welcome to POS System</h1>
+        <h3 style="font-size: 50px; text-align: center; padding-top: 20px">We are glad to have you here ....</h3>
+        <h3 style="font-size: 50px; text-align: center; padding-top: 20px">Happy Shopping !!</h3>
     </div>
-    <div class="ItemCount">
-        <h1>
-            Current Orders <br>
-            <img src="assests/icons8-order-48.png" alt="">
-        </h1>
-        <h2>750</h2>
-    </div>
+
+
 </section>
 <!--Customer section-->
-    <section class="sec2" id="Customer">
-        <div class="Label">
+    <section class="sec2" id="customer">
+        <div class="customerLabel">
             <img src="assests/icons8-customer-64.png" style="width: 100px; height: 100px;" alt="Customer">
             <p style="display: inline-block">Customer</p>
         </div>
@@ -98,6 +85,10 @@
                     </div>
                 </form>
             </div>
+            <form class="d-flex searchBar" role="search" style="width: 300px; height: 40px">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
             <!--Table-->
             <div class="col col-xl-6 col-lg-6 col-md-12 col-sm-12 col12">
                 <table class="table">
@@ -120,33 +111,33 @@
         </div>
     </section>
     <!--Item section-->
-    <section class="sec3" id="Item">
-        <div class="Label">
-            <img src="assests/icons8-customer-64.png" style="width: 100px; height: 100px;" alt="Customer">
-            <p style="display: inline-block">Customer</p>
+    <section class="sec3" id="items">
+        <div class="ItemLabel">
+            <img src="assests/icons8-item-48.png" style="width: 100px; height: 100px;" alt="Customer">
+            <p style="display: inline-block">Items</p>
         </div>
         <!--form-->
         <div class="container">
             <div class="col col-xl-6 col-lg-6 col-md-12 col-sm-12 col12">
                 <form class="from">
                     <div class="mb-3">
-                        <label for="item_code" class="form-label">Item Code</label>
-                        <input type="number" class="form-control" id="item_code">
+                        <label for="Item_id" class="form-label">Item_code</label>
+                        <input type="number" class="form-control" id="Item_id">
                     </div>
 
                     <div class="mb-3">
-                        <label for="ItemName" class="form-label" >Item_name</label>
-                        <input type="text" class="form-control" id="ItemName">
+                        <label for="item" class="form-label" >Item_name</label>
+                        <input type="text" class="form-control" id="item">
                     </div>
 
                     <div class="mb-3">
-                        <label for="price" class="form-label">Item_Price</label>
-                        <input type="text" class="form-control" id="price">
+                        <label for="Price" class="form-label">Price</label>
+                        <input type="text" class="form-control" id="Price">
                     </div>
 
                     <div class="mb-3">
-                        <label for="QTY" class="form-label">Quantity</label>
-                        <input type="text" class="form-control" id="QTY">
+                        <label  for="qty" class="form-label">Quantity</label>
+                        <textarea class="form-control" id="qty" style="height: 120px"></textarea>
                     </div>
 
                     <div class="mt-4" >
@@ -156,22 +147,26 @@
                     </div>
                 </form>
             </div>
+            <form class="d-flex searchBar" role="search" style="width: 300px; height: 40px">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
             <!--Table-->
             <div class="col col-xl-6 col-lg-6 col-md-12 col-sm-12 col12">
                 <table class="table">
                     <thead>
                     <tr>
-                        <th scope="col">Customer_Id</th>
-                        <th scope="col">Customer_Name</th>
-                        <th scope="col">Salary</th>
-                        <th scope="col">Address</th>
+                        <th scope="col">Item_code</th>
+                        <th scope="col">Item_name</th>
+                        <th scope="col">Price</th>
+                        <th scope="col">Quantity</th>
                     </tr>
                     </thead>
                     <tr>
                         <th scope="row">1</th>
-                        <td>Thisura</td>
-                        <td>150 000</td>
-                        <td>matugama</td>
+                        <td>Book</td>
+                        <td>150.00</td>
+                        <td>300</td>
                     </tr>
                 </table>
             </div>
