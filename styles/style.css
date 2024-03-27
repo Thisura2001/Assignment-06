@@ -65,3 +65,49 @@ body{
     position: relative;
     background: linear-gradient(to right top, #629BE1FF, #ffffff);
 }
+.code{
+    position: absolute;
+    left: 900px;
+    top: -150px;
+}
+.codeLabel{
+    position: absolute;
+    left: 900px;
+    top: -180px;
+}
+.qty{
+    position: absolute;
+    left: 600px;
+    top: -120px;
+}
+.qtyLabel{
+    position: absolute;
+    left: 620px;
+    top: -150px;
+}
+.itemName{
+    position: absolute;
+    left: 900px;
+    top: -60px;
+}
+.itemLabel{
+    position: absolute;
+    left: 900px;
+    top: -90px;
+}
+.btnAdd{
+    position: absolute;
+    left: 1350px;
+    top: 390px;
+}
+.tblOrder{
+    position: absolute;
+    left: 180px;
+    top: 470px;
+    width: 1200px;
+}
+.btnPlaceOrder{
+    position: absolute;
+    left: 1300px;
+    top: 650px;
+}

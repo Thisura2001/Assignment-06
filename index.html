@@ -177,6 +177,72 @@
         <img src="assests/icons8-order-48.png" style="width: 100px; height: 100px;" alt="order">
         <p style="display: inline-block">Orders</p>
     </div>
+    <!--form-->
+    <div class="container">
+        <div class="col col-xl-6 col-lg-6 col-md-12 col-sm-12 col12">
+            <form class="from">
+                <div class="mb-3">
+                    <label for="order_id" class="form-label ">Order_id</label>
+                    <input type="number" class="form-control orderId" style="width: 400px;" id="order_id">
+                </div>
+            </form>
+            <form class="from">
+                <div class="mb-3">
+                    <label for="date" class="form-label ">Date</label>
+                    <input type="date" class="form-control date" style="width: 400px;" id="date">
+                </div>
+            </form>
+            <form class="from">
+                <div class="mb-3">
+                    <label for="ItemCode" class="form-label codeLabel">ItemCode</label>
+                    <input type="number" class="form-control code" style="width: 400px;" id="ItemCode">
+                </div>
+            </form>
+            <form class="from">
+                <div class="mb-3">
+                    <label for="qtyOnHand" class="form-label qtyLabel ">Quantity</label>
+                    <input type="number" class="form-control qty" style="width: 100px; height: 70px; border-radius: 20%" id="qtyOnHand">
+                </div>
+            </form>
+            <form class="from">
+                <div class="mb-3">
+                    <label for="ItemName" class="form-label itemLabel">ItemName</label>
+                    <input type="text" class="form-control itemName" style="width: 400px;" id="ItemName">
+                </div>
+            </form>
+            <form class="from">
+                <div class="mb-3">
+                    <label for="QtyOnStock" class="form-label  ">QTYonStock</label>
+                    <input type="number" class="form-control qtyOnStock" style="width: 400px;" id="QtyOnStock">
+                </div>
+            </form>
+        </div>
+        <button type="button" class="btn btn-success btnAdd">ADD</button>
+    </div>
+    <div class="col col-xl-6 col-lg-6 col-md-12 col-sm-12 col12">
+        <table class="table table-bordered border-primary tblOrder">
+            <thead>
+            <tr>
+                <th scope="col">Order_id</th>
+                <th scope="col">Item_code</th>
+                <th scope="col">Order_date</th>
+                <th scope="col">Item_name</th>
+                <th scope="col">Quantity_on_stock</th>
+                <th scope="col">Quantity</th>
+            </tr>
+            </thead>
+            <tr>
+                <th scope="row">1</th>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+
+            </tr>
+        </table>
+        <button type="button" class="btn btn-warning btnPlaceOrder">Place_Order</button>
+    </div>
 </section>
 </body>
 </html>
