@@ -18,12 +18,12 @@ body{
     width: 100vw;
     height: 100vh;
     position: relative;
-    background: linear-gradient(to right top, #629be1, #f5f5f5);
+    background: linear-gradient(to right top, #3b078f, #881717);
 }
 .customerLabel{
     font-size: 100px;
     font-weight: bolder;
-    color: #111515;
+    color: #0469dc;
     margin-left: 30vw;
     top: 30px;
     position: relative;
@@ -48,7 +48,7 @@ body{
 .ItemLabel{
     font-size: 100px;
     font-weight: bolder;
-    color: #111515;
+    color: #0469dc;
     margin-left: 38vw;
     top: 30px;
     position: relative;
@@ -57,13 +57,35 @@ body{
     width: 100vw;
     height: 100vh;
     position: relative;
-    background: linear-gradient(to right top, #629BE1FF, #ffffff);
+    background: linear-gradient(to right top, #3b078f, #881717);
 }
 .sec4{
     width: 100vw;
     height: 100vh;
     position: relative;
-    background: linear-gradient(to right top, #629BE1FF, #ffffff);
+    background: linear-gradient(to right top, #3b078f, #881717);
+}
+.invoice{
+    width: 500px;
+    height: 350px;
+    background: linear-gradient(to right top, #ae89e8, #ffffff);
+    position: relative;
+    left: 40px;
+    top: 70px;
+    border-radius: 20%;
+}
+.invoiceLabel{
+    text-align: center;
+    font-weight:bolder;
+    color: green;
+}
+.itemDetails{
+    width: 400px;
+    height: 250px;
+    background: linear-gradient(to right top, #ae89e8, #ffffff);
+    position: absolute;
+    left: 550px;
+    top: 200px;
 }
 .code{
     position: absolute;
@@ -110,4 +132,85 @@ body{
     position: absolute;
     left: 1300px;
     top: 650px;
+}
+.orderId{
+    position: absolute;
+    width: 200px;
+    left: 20px;
+    top: 60px;
+}
+.orderIdLabel{
+    position: absolute;
+    width: 150px;
+    left: 25px;
+}
+.date{
+    position: absolute;
+    width: 200px;
+    left: 280px;
+    top: 60px;
+}
+.dateLabel{
+    position: absolute;
+    right: 170px;
+    top: 37px;
+}
+.customerIdLabel{
+    position: absolute;
+    width: 150px;
+    left: 25px;
+    top: 117px;
+}
+.customerId{
+    position: absolute;
+    width: 200px;
+    left: 20px;
+    top: 140px;
+}
+.customerName{
+    position: absolute;
+    width: 200px;
+    left: 280px;
+    top: 140px;
+}
+.CustomerNameLabel{
+    position: absolute;
+    right: 110px;
+    top: 120px;
+}
+.customerNameLabel1{
+    position: absolute;
+    width: 150px;
+    left: 25px;
+    top: 195px;
+}
+.CustomerName1{
+    position: absolute;
+    width: 200px;
+    left: 20px;
+    top: 220px;
+}
+.salaryLabel{
+    position: absolute;
+    width: 150px;
+    left: 280px;
+    top: 195px;
+}
+.salary{
+    position: absolute;
+    width: 200px;
+    left: 280px;
+    top: 220px;
+}
+.addressLabel{
+    position: absolute;
+    width: 150px;
+    left: 50px;
+    top: 260px;
+}
+.address{
+    position: absolute;
+    width: 400px;
+    left: 50px;
+    top: 290px;
 }
