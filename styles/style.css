@@ -87,41 +87,6 @@ body{
     left: 550px;
     top: 200px;
 }
-.code{
-    position: absolute;
-    left: 900px;
-    top: -150px;
-}
-.codeLabel{
-    position: absolute;
-    left: 900px;
-    top: -180px;
-}
-.qty{
-    position: absolute;
-    left: 600px;
-    top: -120px;
-}
-.qtyLabel{
-    position: absolute;
-    left: 620px;
-    top: -150px;
-}
-.itemName{
-    position: absolute;
-    left: 900px;
-    top: -60px;
-}
-.itemLabel{
-    position: absolute;
-    left: 900px;
-    top: -90px;
-}
-.btnAdd{
-    position: absolute;
-    left: 1350px;
-    top: 390px;
-}
 .tblOrder{
     position: absolute;
     left: 180px;
@@ -213,4 +178,108 @@ body{
     width: 400px;
     left: 50px;
     top: 290px;
+}
+.itemBox{
+    width: 500px;
+    height: 350px;
+    background: linear-gradient(to right top, #ae89e8, #ffffff);
+    position: relative;
+    left: 550px;
+    top: -40px;
+    border-radius: 20%;
+}
+.itemLabel{
+    text-align: center;
+    font-weight:bolder;
+    color: green;
+}
+.code{
+    position: absolute;
+    width: 200px;
+    left: 20px;
+    top: 60px;
+}
+.itemName{
+    position: absolute;
+    width: 200px;
+    left: 280px;
+    top: 60px;
+}
+.itemNameLabel{
+    position: absolute;
+    right: 140px;
+    top: 37px;
+}
+.priceLabel{
+    position: absolute;
+    width: 150px;
+    left: 25px;
+    top: 117px;
+}
+.price{
+    position: absolute;
+    width: 200px;
+    left: 20px;
+    top: 140px;
+}
+.qtyOnHandLabel{
+    position: absolute;
+    width: 150px;
+    left: 280px;
+    top: 117px;
+}
+.qtyOnHand{
+    position: absolute;
+    width: 200px;
+    left: 280px;
+    top: 140px;
+}
+.qtyLabel{
+    position: absolute;
+    width: 150px;
+    left: 50px;
+    top: 200px;
+}
+.qty{
+    position: absolute;
+    width: 400px;
+    left: 50px;
+    top: 230px;
+}
+.btnAdd{
+    position: absolute;
+    bottom: 20px;
+    right: 80px;
+}
+.total{
+    position: relative;
+    width: 350px;
+    height: 350px;
+    background: linear-gradient(to right top, #ae89e8, #ffffff);
+    left: 1100px;
+    top: -380px;
+    border-radius: 20%;
+}
+#cash{
+    width: 120px;
+    position: relative;
+    left: 10px;
+}
+
+#discount{
+    width: 120px;
+    height: 38px;
+    position: absolute;
+    left: 200px;
+    top: 155px;
+}
+#balance{
+    width: 280px;
+    position: relative;
+    left: 25px;
+}
+#btn-purchase-order{
+    position: absolute;
+    bottom: 20px;
+    right: 80px;
 }

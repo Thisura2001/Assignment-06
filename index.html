@@ -174,7 +174,7 @@
     </section>
 <!--Place order section-->
 <section class="sec4" id="orders">
-    <!--form-->
+    <!--invoice form-->
     <div class="invoice">
         <form>
             <h4 class="invoiceLabel">invoice Details</h4>
@@ -206,7 +206,50 @@
                 <input type="text" class="form-control address" id="cusAddress">
             </div>
         </form>
+        <!--Item form-->
+        <div class="itemBox">
+            <form>
+                <h4 class="itemLabel">Item Details</h4>
+                <div class="mb-3 input-group-sm col-12">
+                    <select class="form-select code" aria-label="Default select example" id="cmbItemId"></select>
+                </div>
+                <div class="mb-3">
+                    <label for="itemName" class="form-label itemNameLabel">Item_name</label>
+                    <input type="number" class="form-control itemName" id="itemName">
+                </div>
+                <div class="mb-3">
+                    <label for="itemPrice" class="form-label priceLabel">Price</label>
+                    <input type="number" class="form-control price" id="itemPrice">
+                </div>
+                <div class="mb-3">
+                    <label for="qtyOnHand" class="form-label qtyOnHandLabel">Qty_On_Hand</label>
+                    <input type="number" class="form-control qtyOnHand" id="qtyOnHand">
+                </div>
+                <div class="mb-3">
+                    <label for="Itemqty" class="form-label qtyLabel">Order_QTY</label>
+                    <input type="text" class="form-control qty" id="Itemqty">
+                </div>
+                <button type="button" class="btn btn-danger btnAdd">Add_Item</button>
+            </form>
+        </div>
+        <div class="total">
+            <form>
+                <br>
+                <h3 id="total">&nbsp;&nbsp;Total : <span>0</span> </h3>
+                <br>
+                <h3 id="subtotal">&nbsp;&nbsp;SubTotal : <span>0</span> </h3>
+                <br>
+                <input type="text" class="form-control" id="cash" placeholder="cash...">
 
+                <input type="text" class="form-control" id="discount" placeholder="discount(%)">
+                <br>
+                <br>
+                <input type="text" class="form-control" id="balance" placeholder="balance...">
+                <br><br>
+                <button type="submit" class=" btn btn-success" id="btn-purchase-order">Purchase</button>
+            </form>
+
+        </div>
     </div>
 
     <div class="col col-xl-6 col-lg-6 col-md-12 col-sm-12 col12">
